@@ -45,7 +45,18 @@ header ul {
 }
 
 h1 {
+    text-align: center;
     color: var(--green);
+    font-size: 30px;
+}
+
+.subtitulo {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    
+
 }
 
 header ul li {
@@ -105,6 +116,11 @@ main {
 
 }
 
+.rotulo {
+    margin-top: -310px;
+    margin-left: -200px;
+    
+}
 
 .nav-bar {
     display: flex;
