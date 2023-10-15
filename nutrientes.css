@@ -196,14 +196,16 @@ footer {
 }
 
 .txtFooter {
-    text-align: center;
+    display: flex;
+    align-items: center;
     margin-top: 2px;
     font-weight: 400;
 }
 
 .tabela {
-    margin-top: -260px;
-    margin-left: 80px;
+    margin-top: -600px;
+margin-left: 40px;    
+    align-items: center;
 }
 
 table {

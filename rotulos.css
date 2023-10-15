@@ -109,17 +109,42 @@ main {
 .ingredientes {
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr 1fr;
     margin: 30px;
     gap: 30px;
-
+    text-align: justify;
 }
 
-.rotulo {
-    margin-top: -310px;
-    margin-left: -200px;
+.p3 {
+    margin: 25px;
+    margin-bottom: 120px;
+    margin-top: 80px;
+}
+
+.porcao {
+    margin-top: 100px;
+    text-align: justify;
+    padding: 30px;
+}
+.porcentagem     {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px;
+    text-align:left;
+    margin: 30px;
     
+}
+.rotulo {
+ margin-top: -320px;
+    
+}
+
+
+.p3 {
+    text-align: center;
 }
 
 .nav-bar {
