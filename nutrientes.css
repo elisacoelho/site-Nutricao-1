@@ -78,6 +78,7 @@ h1 {
 
 }
 
+
 h2 {
     color: rgb(82, 146, 82);
 }
@@ -99,6 +100,7 @@ h2 {
     margin-bottom: 30px;
 
 }
+
 
 
 .container-slider {
@@ -192,19 +194,18 @@ h2 {
 footer {
     background-color: var(--green);
     color: var(--white);
-    padding: 50px;
+    padding: 20px;
 }
 
 .txtFooter {
-    display: flex;
     align-items: center;
-    margin-top: 2px;
-    font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .tabela {
     margin-top: -600px;
-margin-left: 40px;    
+    margin-left: 40px;
     align-items: center;
 }
 

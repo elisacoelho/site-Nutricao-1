@@ -67,13 +67,16 @@ header ul li a:hover::before {
     transform-origin: left;
 }
 
-
 footer {
     background-color: var(--green);
     color: var(--white);
-    text-align: center;
-    padding: 15px;
+    padding: 20px;
+}
 
+.txtFooter {
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .container {
@@ -169,6 +172,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+
 }
 
 .grid-item1 {
@@ -177,7 +181,8 @@ p {
     background-size: cover;
     background-image: url(https://marjan.com.br/wp-content/uploads/2023/04/o-que-sao-alimentos-in-natura-e-por-que-escolhe-los.jpeg);
     border: 7px solid #f1fff6;
-    padding: 9rem;
+    padding: 9rem 1rem;
+
 }
 
 .grid-item2 {
@@ -186,7 +191,8 @@ p {
     background-size: cover;
     background-image: url(https://longevidadesaudavel.com.br/wp-content/uploads/2022/07/healthy-food-and-medical-equipment-1024x683.jpg);
     border: 7px solid #f1fff6;
-    padding: 9rem;
+    padding: 9rem 1rem;
+
 }
 
 .grid-item3 {
@@ -195,7 +201,8 @@ p {
     background-size: cover;
     background-image: url(https://blog.brkambiental.com.br/wp-content/uploads/2019/10/original-7b1c4112d366cf62b8ec77c8db01e27e.jpg);
     border: 7px solid #f1fff6;
-    padding: 9rem;
+    padding: 9rem 1rem;
+
 }
 
 .grid-item4 {
@@ -204,10 +211,11 @@ p {
     background-size: cover;
     background-image: url(https://imagens1.ne10.uol.com.br/blogsjconline/olhovivo/2017/04/r%C3%B3tulooss.jpg);
     border: 7px solid #f1fff6;
-    padding: 9rem;
+    padding: 9rem 1rem;
 }
 
 .txtGrid {
+    align-items: center;
     color: #f1fff6;
     text-align: center;
     text-decoration: none;
