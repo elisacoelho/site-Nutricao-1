@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--green);
-    padding: 45px;
+    padding: 24px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 

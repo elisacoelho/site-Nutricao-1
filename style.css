@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--green);
-    padding: 45px;
+    padding: 24px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -172,54 +172,64 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-
 }
 
-.grid-item1 {
+.grid-item1::before,
+.grid-item2::before,
+.grid-item3::before,
+.grid-item4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: blur(1.5px);
+    border: 7px solid #f1fff6;
+}
+
+.grid-item1::before {
     background-image: url(https://marjan.com.br/wp-content/uploads/2023/04/o-que-sao-alimentos-in-natura-e-por-que-escolhe-los.jpeg);
-    border: 7px solid #f1fff6;
-    padding: 9rem 1rem;
-
 }
 
-.grid-item2 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.grid-item2::before {
     background-image: url(https://longevidadesaudavel.com.br/wp-content/uploads/2022/07/healthy-food-and-medical-equipment-1024x683.jpg);
-    border: 7px solid #f1fff6;
-    padding: 9rem 1rem;
-
 }
 
-.grid-item3 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.grid-item3::before {
     background-image: url(https://blog.brkambiental.com.br/wp-content/uploads/2019/10/original-7b1c4112d366cf62b8ec77c8db01e27e.jpg);
-    border: 7px solid #f1fff6;
-    padding: 9rem 1rem;
-
 }
 
-.grid-item4 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.grid-item4::before {
     background-image: url(https://imagens1.ne10.uol.com.br/blogsjconline/olhovivo/2017/04/r%C3%B3tulooss.jpg);
-    border: 7px solid #f1fff6;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4 {
+    position: relative;
     padding: 9rem 1rem;
 }
+
+.grid-item1 h2,
+.grid-item2 h2,
+.grid-item3 h2,
+.grid-item4 h2 {
+    position: relative;
+    z-index: 1;
+}
+
 
 .txtGrid {
     align-items: center;
     color: #f1fff6;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 footer {

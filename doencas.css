@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--green);
-    padding: 45px;
+    padding: 22px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -192,8 +192,6 @@ footer {
 
 .title {
     margin: 50px auto 50px auto;
-
-
 }
 
 .container p {
