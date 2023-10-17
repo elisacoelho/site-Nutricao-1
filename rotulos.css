@@ -50,6 +50,10 @@ h1 {
     font-size: 30px;
 }
 
+h3 {
+    color: rgb(82, 146, 82);
+}
+
 .subtitulo {
     text-align: center;
     letter-spacing: 4px;
@@ -118,6 +122,11 @@ main {
     margin: 30px;
     gap: 30px;
     text-align: justify;
+    margin-top: 80px;
+}
+
+.tabelanutricional {
+    margin-top: -60px;
 }
 
 .p3 {
@@ -127,7 +136,7 @@ main {
 }
 
 .porcao {
-    margin-top: 100px;
+    margin-top: 10px;
     text-align: justify;
     padding: 30px;
 }
