@@ -70,12 +70,13 @@ header ul li a:hover::before {
 footer {
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    padding: 40px;
 }
 
 .txtFooter {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
 }
 

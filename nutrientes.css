@@ -101,8 +101,6 @@ h2 {
 
 }
 
-
-
 .container-slider {
     display: flex;
     width: 100%;
@@ -194,17 +192,19 @@ h2 {
 footer {
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    padding: 40px;
 }
 
 .txtFooter {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 18px;
     text-align: center;
+    margin-bottom: 8px;
+    font-weight: 300;
 }
 
 .tabela {
-    margin-top: -600px;
+    margin-top: -400px;
     margin-left: 40px;
     align-items: center;
 }

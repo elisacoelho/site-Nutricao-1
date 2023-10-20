@@ -106,7 +106,7 @@ header ul li a:hover::before {
 
 
 /*conteúdo*/
-th{
+th {
     color: var(--green);
 }
 
@@ -114,16 +114,18 @@ th{
     color: var(--green);
     font-size: 20px;
     margin-bottom: 10px;
-  
+
 }
+
 .titulo2 {
     color: var(--green);
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
- 
+
 }
-img{
+
+img {
     margin-top: 10px;
 }
 
@@ -153,21 +155,26 @@ img{
     margin-bottom: 10px;
     ;
 }
-#tabelaPressao{
-  table-layout: color(--green);
-   font-size: 94%;
+
+#tabelaPressao {
+    table-layout: color(--green);
+    font-size: 94%;
+   
 }
 
-#tabelaIMC{
-   table-layout: color(--green);
+#tabelaIMC {
+    table-layout: color(--green);
     font-size: 100%;
+    margin-left: 24px;
 }
-#tabelaDiabetes{
+
+#tabelaDiabetes {
     table-layout: color(--green);
     font-size: 88%;
 
 }
-.border{
+
+.border {
     text-align: left;
     font-weight: 350;
     border: 1px solid var(--green);
@@ -178,12 +185,14 @@ img{
 footer {
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    padding: 40px;
 }
 
 .txtFooter {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 300;
     text-align: center;
 }
 

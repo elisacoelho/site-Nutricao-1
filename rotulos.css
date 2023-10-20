@@ -98,12 +98,14 @@ header ul li a:hover::before {
 footer {
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    padding: 40px;
 }
 
 .txtFooter {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -123,6 +125,7 @@ main {
     gap: 30px;
     text-align: justify;
     margin-top: 80px;
+
 }
 
 .tabelanutricional {
@@ -146,10 +149,10 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin: 30px;
     text-align: left;
     margin: 30px;
-
+    margin-left: 50px;
+    gap: 50px;
 }
 
 .rotulo {
