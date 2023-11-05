@@ -156,31 +156,6 @@ img {
     ;
 }
 
-#tabelaPressao {
-    table-layout: color(--green);
-    font-size: 94%;
-   
-}
-
-#tabelaIMC {
-    table-layout: color(--green);
-    font-size: 100%;
-    margin-left: 24px;
-}
-
-#tabelaDiabetes {
-    table-layout: color(--green);
-    font-size: 88%;
-
-}
-
-.border {
-    text-align: left;
-    font-weight: 350;
-    border: 1px solid var(--green);
-    padding: 10px;
-    margin-top: 20px;
-}
 
 footer {
     background-color: var(--green);
