@@ -1,299 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doenças</title>
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="doencas.css">
-    <script src="script.js" defer></script>
-</head>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <title> Doenças</title>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="imgs/favicon.png" alt="favicon" style="height: 80px; width: 80px;">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="nutrientes.html" class="nav-link">Nutrientes</a></li>
-                    <li class="nav-item"><a href="impactos.html" class="nav-link">Impactos</a></li>
-                    <li class="nav-item"><a href="doencas.html" class="nav-link">Doenças</a></li>
-                    <li class="nav-item"><a href="rotulos.html" class="nav-link">Rótulos</a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="index.html"></a></button>
-            </div>
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="imgs/menu_white_36dp.svg"
-                        alt=""></button>
-            </div>
+    <header id="header">
+      <div class="logo">
+        <img class="logoNav" src="imgs/favicon.png" alt="favicon" >
+    </div>
+        <nav id="nav">
+
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li class="nav-item"><a href="index.html">INÍCIO</a></li>
+                <li class="nav-item"><a href="nutrientes.html">NUTRIENTES</a></li>
+                <li class="nav-item"><a href="impactos.html">IMPACTOS</a></li>
+                <li class="nav-item"><a href="doencas.html">DOENÇAS</a></li>
+                <li class="nav-item"><a href="rotulos.html">ROTULOS</a></li>
+          </ul>
+          <div class="linha1"></div>
+          <div class="linha2"></div>
         </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="nutrientes.html" class="nav-link">Nutrientes</a></li>
-                <li class="nav-item"><a href="impactos.html" class="nav-link">Impactos</a></li>
-                <li class="nav-item"><a href="doencas.html" class="nav-link">Doenças</a></li>
-                <li class="nav-item"><a href="rotulos.html" class="nav-link">Rótulos</a></li>
-            </ul>
+      </header>
+      <script src="script.js"></script>
 
-            <div class="login-button">
-                <button><a href="index.html"></a></button>
+
+      <main>
+        <section class="introducao">
+            <h1>O que a má alimentação pode causar</h1>
+
+            <p>A alimentação é muito mais do que simplesmente satisfazer a fome; é a base que sustenta a nossa saúde
+                e bem-estar. Infelizmente, em um mundo onde as escolhas alimentares muitas vezes são influenciadas
+                por conveniência e preferências pessoais, a má alimentação tornou-se um problema global crescente. O
+                que comemos diariamente desempenha um papel crítico na determinação da nossa saúde a longo prazo.
+            </p>
+
+
+            <h1 class="title">Possíveis doenças relacionadas</h1>
+            <h2 class="title2">
+                à má alimentação:
+            </h2>
+        </section>
+
+        <!--CONTAINER-->
+        <div class="row-columns">
+            <div class="column">
+
+                <h2 class="titulo">Obesidade</h2>
+                <p class="text">A obesidade é o resultado de um consumo crônico de calorias em excesso em relação ao
+                    gasto calórico. Calculadora IMC disponível no fim da página.</p>
+                <img src="imgs/obesidade.jpg" alt="foto 1">
+               
+                
+                
+            </div>
+
+            <div class="column">
+
+                <h2 class="titulo">Diabetes</h2>
+                <p class="text">Diabetes é uma condição na qual o corpo não consegue regular adequadamente os níveis
+                    de açúcar no sangue, levando à resistência à insulina e ao diabetes tipo 2.</p>
+                <img src="imgs/diabetes2.webp" alt="Destino 2">
+               
+            </div>
+
+            <div class="column">
+
+                <h2 class="titulo">Hipertensão Arterial</h2>
+                <p class="text">Hipertensão Arterial é um aumento da pressão sanguínea que pode ocorrer devido ao
+                    alto consumo de sódio e gorduras saturadas na dieta.</p>
+                <img src="imgs/pressao-alta-1024x681.jpg" alt="Destino 3">
+                
+            </div>
+
+            <div class="column">
+
+                <h2 class="titulo">Doenças Cardiovasculares</h2>
+                <p class="text">Doenças Cardiovasculares são condições que afetam o coração e os vasos sanguíneos,
+                    incluindo doença arterial coronariana e AVCs, muitas vezes associadas
+                    a dietas ricas em gorduras saturadas, trans e colesterol.</p>
+                <img src="imgs/doencas-cardiovasculares.jpg" alt="Destino 1">
+              
+            </div>
+
+            <div class="column">
+
+                <h2 class="titulo">Câncer</h2>
+                <p class="text">Câncer é uma doença caracterizada pelo crescimento descontrolado de células no
+                    corpo, sendo o risco aumentado por dietas que incluem carnes processadas, alimentos
+                    ultraprocessados e baixo consumo de frutas, vegetais e fibras.</p>
+                <img src="imgs/cancer.png" alt="Destino 1" width="300px">
+            </div>
+
+            <div class="column">
+
+                <h2 class="titulo">Osteoporose</h2>
+                <p class="text">
+
+                    A osteoporose é uma doença em que ocorre a perda da massa óssea, fazendo com que os ossos fiquem
+                    frágeis e porosos, tornando-se consequentemente mais sensíveis e quebradiços. Se dá pela falta
+                    de cálcio e vitamina D.</p>
+                <img src="imgs/osteoporose.jpg" alt="Destino 3">
+              
             </div>
         </div>
-    </header>
-
-    <body>
-        <main>
-            <section class="introducao">
-                <h1>O que a má alimentação pode causar</h1>
-
-                <p>A alimentação é muito mais do que simplesmente satisfazer a fome; é a base que sustenta a nossa saúde
-                    e bem-estar. Infelizmente, em um mundo onde as escolhas alimentares muitas vezes são influenciadas
-                    por conveniência e preferências pessoais, a má alimentação tornou-se um problema global crescente. O
-                    que comemos diariamente desempenha um papel crítico na determinação da nossa saúde a longo prazo.
-                </p>
 
 
-                <h1 class="title">Possíveis doenças relacionadas</h1>
-                <h2 class="title2">
-                    à má alimentação:
-                </h2>
-            </section>
-
-            <!--CONTAINER-->
-            <div class="row-columns">
-                <div class="column">
-
-                    <h2 class="titulo">Obesidade</h2>
-                    <p class="text">A obesidade é o resultado de um consumo crônico de calorias em excesso em relação ao
-                        gasto calórico. Calculadora IMC disponível no fim da página.</p>
-                    <img src="imgs/obesidade.jpg" alt="foto 1">
-                    <h3 class="titulo2"> De acordo com a tabela IMC</h3>
-                    <div id="tabelaIMC">
-
-                        <table border="1">
-                            <tr>
-                                <th>Classificação</th>
-                                <th>IMC</th>
-                            </tr>
-                            <tr>
-                                <td>Abaixo do Peso</td>
-                                <td>Menos de 18.5</td>
-                            </tr>
-                            <tr>
-                                <td>Peso Saudável</td>
-                                <td>18.5 - 24.9</td>
-                            </tr>
-                            <tr>
-                                <td>Sobrepeso</td>
-                                <td>25.0 - 29.9</td>
-                            </tr>
-                            <tr>
-                                <td>Obesidade Grau 1 (Leve)</td>
-                                <td>30.0 - 34.9</td>
-                            </tr>
-                            <tr>
-                                <td>Obesidade Grau 2 (Moderada)</td>
-                                <td>35.0 - 39.9</td>
-                            </tr>
-                            <tr>
-                                <td>Obesidade Grau 3 (Grave)</td>
-                                <td>40 ou mais</td>
-                            </tr>
-                        </table>
-                    </div>
-                    </p>
-                </div>
-
-                <div class="column">
-
-                    <h2 class="titulo">Diabetes</h2>
-                    <p class="text">Diabetes é uma condição na qual o corpo não consegue regular adequadamente os níveis
-                        de açúcar no sangue, levando à resistência à insulina e ao diabetes tipo 2.</p>
-                    <img src="imgs/diabetes2.webp" alt="Destino 2">
-                    <h3 class="titulo2">Diagnóstico Diabetes tipo 2</h3>
-                    <div id="tabelaDiabetes">
-                        <table border="1">
-                            <tr>
-                                <th>Nível de Glicose em Jejum (mg/dL)</th>
-                                <th>Teste de Tolerância à Glicose (mg/dL)</th>
-                                <th>Hemoglobina A1c (%)</th>
-                                <th>Diagnóstico</th>
-                            </tr>
-                            <tr>
-                                <td>Menos de 100</td>
-                                <td>N/A</td>
-                                <td>Menos de 5.7</td>
-                                <td>Normal</td>
-                            </tr>
-                            <tr>
-                                <td>100 - 125</td>
-                                <td>140 - 199</td>
-                                <td>5.7 - 6.4</td>
-                                <td>Pré-diabetes</td>
-                            </tr>
-                            <tr>
-                                <td>126 ou mais</td>
-                                <td>200 ou mais</td>
-                                <td>6.5 ou mais</td>
-                                <td>Diabetes Tipo 2</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-
-                <div class="column">
-
-                    <h2 class="titulo">Hipertensão Arterial</h2>
-                    <p class="text">Hipertensão Arterial é um aumento da pressão sanguínea que pode ocorrer devido ao
-                        alto consumo de sódio e gorduras saturadas na dieta.</p>
-                    <img src="imgs/pressao-alta-1024x681.jpg" alt="Destino 3">
-                    <h3 class="titulo2">Tabela de Hipertensão</h3>
-                    <div id="tabelaPressao">
-                        <table border="1">
-                            <tr>
-                                <th>Classificação</th>
-                                <th>Sistólica (mm Hg)</th>
-                                <th>Diastólica (mm Hg)</th>
-                            </tr>
-                            <tr>
-                                <td>Ótima</td>
-                                <td>Menos de 120</td>
-                                <td>Menos de 80</td>
-                            </tr>
-                            <tr>
-                                <td>Normal</td>
-                                <td>120-129</td>
-                                <td>80-84</td>
-                            </tr>
-                            <tr>
-                                <td>Normal Alta</td>
-                                <td>130-139</td>
-                                <td>85-89</td>
-                            </tr>
-                            <tr>
-                                <td>Hipertensão 1</td>
-                                <td>140-159</td>
-                                <td>90-99</td>
-                            </tr>
-                            <tr>
-                                <td>Hipertensão 2</td>
-                                <td>160 ou mais</td>
-                                <td>100 ou mais</td>
-                            </tr>
-                            <tr>
-                                <td>Crise Hipertensiva</td>
-                                <td>Mais de 180</td>
-                                <td>Mais de 120</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-
-                <div class="column">
-
-                    <h2 class="titulo">Doenças Cardiovasculares</h2>
-                    <p class="text">Doenças Cardiovasculares são condições que afetam o coração e os vasos sanguíneos,
-                        incluindo doença arterial coronariana e AVCs, muitas vezes associadas
-                        a dietas ricas em gorduras saturadas, trans e colesterol.</p>
-                    <img src="imgs/doencas-cardiovasculares.jpg" alt="Destino 1">
-                    <h3 class="titulo2">Sintomas das doencas cardiovasculares</h3>
-                    <div class="border">
-                        <p>Um ataque cardíaco ou
-                            acidente vascular cerebral pode ser o primeiro aviso da doença subjacente. Os sintomas do
-                            ataque cardíaco incluem: Dor ou desconforto no centro do peito, braços, ombro esquerdo,
-                            cotovelos, mandíbula ou costas.</p>
-                    </div>
-                </div>
-
-                <div class="column">
-
-                    <h2 class="titulo">Câncer</h2>
-                    <p class="text">Câncer é uma doença caracterizada pelo crescimento descontrolado de células no
-                        corpo, sendo o risco aumentado por dietas que incluem carnes processadas, alimentos
-                        ultraprocessados e baixo consumo de frutas, vegetais e fibras.</p>
-                    <img src="imgs/cancer.png" alt="Destino 1">
-                    <h3 class="titulo2"> Pesquisa realizada em 2018: Tipos de câncer mais comuns</h3>
-                    <div class="border">
-                        <p>Pulmão (2,09 milhões de casos)</p>
-                        <p>Mama (2,09 milhões de casos)</p>
-                        <p> Colorretal (1,8 milhão de casos)</p>
-                        <p> Próstata (1,28 milhão de casos)</p>
-                        <p> Câncer de pele não-melanoma (1,04 milhão de casos)</p>
-                        <p> Estômago (1,03 milhão de casos)</p>
-                    </div>
-                </div>
-
-                <div class="column">
-
-                    <h2 class="titulo">Osteoporose</h2>
-                    <p class="text">
-
-                        A osteoporose é uma doença em que ocorre a perda da massa óssea, fazendo com que os ossos fiquem
-                        frágeis e porosos, tornando-se consequentemente mais sensíveis e quebradiços. Se dá pela falta
-                        de cálcio e vitamina D.</p>
-                    <img src="imgs/osteoporose.jpg" alt="Destino 3">
-                    <h3 class="titulo2">Sintomas atrelados a osteoporose</h3>
-                    <div class="border">
-                        <p>Retração gengival</p>
-                        <p> Diminuição da força de preensão</p>
-                        <p> Diminuição da altura corporal</p>
-                        <p> Formigamento nas pernas</p>
-                        <p> Deformidade da coluna</p>
-                        <p> Dor no pescoço</p>
-                        <p> Dor no quadril e costas.</p>
-                    </div>
 
 
-                </div>
+        <!--CALCULADORA-->
+
+        <h1 class="title">Calcule abaixo seu IMC</h1>
+
+        <div class="container">
+
+            <p>O IMC é importante porque fornece uma medida simples e acessível que pode ajudar na detecção
+                precoce
+                de condições de saúde associadas ao peso, como doenças cardiovasculares, diabetes tipo 2 e
+                hipertensão. Além disso, ele auxilia na definição de metas realistas de peso para indivíduos que
+                buscam melhorar sua saúde por meio de mudanças na alimentação e no estilo de vida.</p>
+
+            <div class="calculadora">
+                <form>
+                    <label for="peso">Peso (kg):</label><br>
+                    <input type="number" id="peso" name="peso"><br>
+                    <label for="altura">Altura (m):</label><br>
+                    <input type="number" id="altura" name="altura"><br><br>
+                    <input type="button" value="Calcular" onclick="calcularIMC()">
+                    <input type="button" value="Limpar formulário" onclick="limparFormulario()">
+                </form>
+
+                <p id="imc"></p>
+                <p id="comentario"></p>
             </div>
+        </div>
+    </main>
+
+
+<footer>
+
+    <p class="txtFooter">&copy; Nutrição. Todos os direitos reservados.</p>
+
+</footer>
 
 
 
-
-            <!--CALCULADORA-->
-
-            <h1 class="title">Calcule abaixo seu IMC</h1>
-
-            <div class="container">
-
-                <p>O IMC é importante porque fornece uma medida simples e acessível que pode ajudar na detecção
-                    precoce
-                    de condições de saúde associadas ao peso, como doenças cardiovasculares, diabetes tipo 2 e
-                    hipertensão. Além disso, ele auxilia na definição de metas realistas de peso para indivíduos que
-                    buscam melhorar sua saúde por meio de mudanças na alimentação e no estilo de vida.</p>
-
-                <div class="calculadora">
-                    <form>
-                        <label for="peso">Peso (kg):</label><br>
-                        <input type="number" id="peso" name="peso"><br>
-                        <label for="altura">Altura (m):</label><br>
-                        <input type="number" id="altura" name="altura"><br><br>
-                        <input type="button" value="Calcular" onclick="calcularIMC()">
-                        <input type="button" value="Limpar formulário" onclick="limparFormulario()">
-                    </form>
-
-                    <p id="imc"></p>
-                    <p id="comentario"></p>
-                </div>
-            </div>
-        </main>
-    </body>
-
-    <footer>
-
-        <p class="txtFooter">&copy; Nutrição. Todos os direitos reservados.</p>
-
-    </footer>
-
-
+</body>
 </html>
+

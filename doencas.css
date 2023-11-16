@@ -1,14 +1,19 @@
-@charset "UTF-8";
-
+@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Raleway:wght@100;500;600;900&display=swap");
 
 
+
+
 :root {
+
+    
     --green: rgb(1, 59, 44);
     --gray: #E0E1E0;
     --white: #ffffff;
     --ice-gray: #f1f1f1;
     --content-font: 'Poppins', sans-serif;
+    --hover: #298961;
+
 }
 
 * {
@@ -31,49 +36,127 @@ header {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    
 }
 
-header ul {
-    position: relative;
-    display: flex;
-    gap: 30px;
-}
 
-header ul li {
-    list-style: none;
-}
-
-header ul li a {
-    position: relative;
+a {
+    color: var(--white);
     text-decoration: none;
-    font-size: 1em;
-    color: var(--ice-gray);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+    font-family: var(--content-font);
+    margin-left: 30px;
 }
 
-header ul li a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background: var(--gray);
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    transform-origin: right;
+a:hover {
+    background-color: var(--hover);
 }
 
-header ul li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+
+.logoNav {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    
 }
 
+#header {
+    box-sizing: border-box;
+    height: 130px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--green);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#menu a {
+    display: block;
+    padding: 0.5rem;
+    
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 128px;
+        right: 0px;
+        background: var(--green);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid var(--white);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: var(--white);
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
 
 .introducao h1 {
     text-align: center;
@@ -127,6 +210,7 @@ th {
 
 img {
     margin-top: 10px;
+
 }
 
 .text {
@@ -139,6 +223,26 @@ img {
     gap: 30px;
     padding: 10px;
     margin: 20px auto 40px auto;
+}
+
+@media (max-width: 1600px) {
+    .row-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 30px;
+        padding: 10px;
+        margin: 20px auto 40px auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .row-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 10px;
+        margin: 20px auto 40px auto;
+    }
 }
 
 .column {
@@ -156,31 +260,6 @@ img {
     ;
 }
 
-#tabelaPressao {
-    table-layout: color(--green);
-    font-size: 94%;
-   
-}
-
-#tabelaIMC {
-    table-layout: color(--green);
-    font-size: 100%;
-    margin-left: 24px;
-}
-
-#tabelaDiabetes {
-    table-layout: color(--green);
-    font-size: 88%;
-
-}
-
-.border {
-    text-align: left;
-    font-weight: 350;
-    border: 1px solid var(--green);
-    padding: 10px;
-    margin-top: 20px;
-}
 
 footer {
     background-color: var(--green);
@@ -259,7 +338,7 @@ input[type=button]:hover {
 
 .logo {
     display: flex;
-    align-items: center;
+    
 }
 
 .logo h1 {
@@ -311,52 +390,6 @@ input[type=button]:hover {
 }
 
 
-@media screen and (max-width: 730px) {
 
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
 
-    .nav-item {
-        display: none;
-    }
 
-    .login-button {
-        display: none;
-    }
-
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-
-    .open {
-        display: block;
-    }
-}
